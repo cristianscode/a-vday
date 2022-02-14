@@ -167,6 +167,7 @@ export class FlowerComponent implements AfterViewInit {
 
   /* LIFECYCLE */
   public ngAfterViewInit(): void {
+    this.init();
   }
 
   public init() {
