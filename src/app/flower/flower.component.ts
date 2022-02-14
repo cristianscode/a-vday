@@ -166,9 +166,7 @@ export class FlowerComponent implements AfterViewInit {
   }
 
   /* LIFECYCLE */
-  public ngAfterViewInit(): void {
-    this.init();
-  }
+  public ngAfterViewInit(): void { }
 
   public init() {
     this.createScene();
@@ -176,10 +174,10 @@ export class FlowerComponent implements AfterViewInit {
     this.createCamera();
     this.startRendering();
     this.addControls();
-    $("#back").fadeOut();
-    $("#heart").fadeOut();
-    this.canvas.width  = window.innerWidth;
-    this.canvas.height = window.innerHeight;
-    $(window).trigger('resize');
+    setTimeout(() => {
+      this.onResize(new Event('resize'));
+      $("#back").fadeOut();
+      $("#heart").fadeOut();
+    }, 3000)
   }
 }
