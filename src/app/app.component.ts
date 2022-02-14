@@ -45,14 +45,12 @@ export class AppComponent implements AfterViewInit {
   next(current: string, next: string) {
     $("#" + current).fadeOut('slow');
     setTimeout(() => { $("#" + next).fadeIn('slow') }, 1000);
-    if (next == 'step9') {
+    if (next == 'step10') {
       $(".dot").fadeOut('slow');
       $("#back").fadeIn();
       $("#heart").fadeIn();
       setTimeout(() => {
         this.flower.init();
-        $("#back").fadeOut();
-        $("#heart").fadeOut();
       }, 2000);
     }
 

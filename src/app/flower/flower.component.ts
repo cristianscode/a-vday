@@ -175,5 +175,7 @@ export class FlowerComponent implements AfterViewInit {
     this.createCamera();
     this.startRendering();
     this.addControls();
+    $("#back").fadeOut();
+    $("#heart").fadeOut();
   }
 }

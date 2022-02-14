@@ -123,6 +123,21 @@ section {
     color: rgba(0, 0, 0, 0.7);
 }
 
+@media only screen and (min-width: 700px) {
+    .section-title {
+        font-size: 5.6rem;
+        line-height: 1.5;
+        margin: 6rem 0 8rem;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .section-title2 {
+        font-size: 4rem;
+        line-height: 1.5;
+        margin: 6rem 0 8rem;
+        color: rgba(0, 0, 0, 0.7);
+    }
+}
+
 .arrow,
 .arrow:before {
     position: absolute;

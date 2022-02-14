@@ -26,9 +26,19 @@
         <div class="arrow" (click)="next('step3','step4')"></div>
     </div>
     <div id="step4" class="layout" style="display: none;">
-        <h5 class="section-title section-title2">You absolutley amaze me, words can't describe how much you mean to me. You've brought balance, excitement, and most importantly happiness to my life. I honestly can't imagine it without you.</h5>
+        <h5 class="section-title section-title2">You absolutley amaze me, words can't describe how much you mean to me. </h5>
         <svg><use xlink:href="#icon-chevron"></use></svg>
-        <div class="arrow" (click)="next('step4','step5')"></div>
+        <div class="arrow" (click)="next('step4','step45')"></div>
+    </div>
+    <div id="step45" class="layout" style="display: none;">
+        <h5 class="section-title section-title2">You've brought balance, excitement, and most importantly happiness to my life.</h5>
+        <svg><use xlink:href="#icon-chevron"></use></svg>
+        <div class="arrow" (click)="next('step45','step475')"></div>
+    </div>
+    <div id="step475" class="layout" style="display: none;">
+        <h5 class="section-title section-title2">I love you for who you are and as days go by that only becomes more true.</h5>
+        <svg><use xlink:href="#icon-chevron"></use></svg>
+        <div class="arrow" (click)="next('step475','step5')"></div>
     </div>
     <div id="step5" class="layout" style="display: none;">
         <h3 class="section-title section-title2">Since I've met you, there hasn't been a single day I haven't thought of you.</h3>
@@ -41,16 +51,21 @@
         <div class="arrow" (click)="next('step6','step7')"></div>
     </div>
     <div id="step7" class="layout" style="display: none;">
-        <h3 class="section-title section-title2">I love everything about you, your infectious smile, laugh, humor, kindness, confidence, and so much more. As days go by I always find more reasons to love you more. </h3>
+        <h3 class="section-title section-title2">I love everything about you, your infectious smile, laugh, humor, kindness, confidence, and so much more.</h3>
         <svg><use xlink:href="#icon-chevron"></use></svg>
         <div class="arrow" (click)="next('step7','step8')"></div>
     </div>
     <div id="step8" class="layout" style="display: none;">
-        <h3 class="section-title section-title2">I'm so excited for whats to come and what our future has instored for us. There is literally no one I'd rather spend Valentines with other than you.</h3>
+        <h3 class="section-title section-title2">I'm so excited for whats to come and what our future has in store for us.</h3>
         <svg><use xlink:href="#icon-chevron"></use></svg>
         <div class="arrow" (click)="next('step8','step9')"></div>
     </div>
-    <div id="step9" style="display: none;">
+    <div id="step9" class="layout" style="display: none;">
+        <h3 class="section-title section-title2">There is literally no one I'd rather spend Valentines with other than you.</h3>
+        <svg><use xlink:href="#icon-chevron"></use></svg>
+        <div class="arrow" (click)="next('step9','step10')"></div>
+    </div>
+    <div id="step10" style="display: none;">
         <div style="text-align: center; width: 100%; position: absolute; z-index: 999999;">
             <h3 class="section-title section-title2" id="seeya">See Ya at 7:45!</h3>
         </div>
